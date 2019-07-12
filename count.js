@@ -13,7 +13,20 @@ But bears it out even to the edge of doom.
   If this be error and upon me proved,
   I never writ, nor no man ever loved.`;
 
-let uniques = {};
+let uniques = new Map();
+let words = sonnet.match(/\w+/g);
+for (let i = 0; i< words.length; i++) {
+  let word = words[i];
+  if (uniques.has(word)){
+    let currentValue = uniques.get(word);
+    uniques.set(word,currentValue+1);
+  } else {
+     uniques.set(word, 1);
+  }
+}
+console.log(uniques);
+
+/*let uniques = {};
 let words = sonnet.match(/\w+[']\w{2,}/g);
 for (let i = 0; i < words.length; i++) {
   let word = words[i];
@@ -23,4 +36,4 @@ for (let i = 0; i < words.length; i++) {
     uniques[word] = 1;
   }
 }
-console.log(uniques);
+console.log(uniques);*/
