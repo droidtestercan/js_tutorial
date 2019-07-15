@@ -7,6 +7,6 @@ Array.from(soliloquy).forEach(function(character) {
   console.log(character);
 });
 // Rewrite forEach function with big arrow notation
-a.forach(=>(element) {
+a.forach(element=>{
   console.log(element);
 });
