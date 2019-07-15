@@ -7,5 +7,6 @@ function dayName(date) {
 
 // Returns a greeting for the given date.
 function greeting(date) {
+  console.log(dayName(date));
   return "Hello, world! Happy "+dayName(date);
 }
