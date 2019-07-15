@@ -11,7 +11,8 @@ a.forEach(element=>{
   console.log(element);
 });
 let c = [8, 17, 42, 99];
-c.sort(function(a, b) { return a - b; });
+c.sort(function(a, b) { console.log("a is: "+a+" b is: "+b+" result is:"+(a-b));
+  return a - b; });
 c.forEach(element=>{
   console.log(element);
 });
