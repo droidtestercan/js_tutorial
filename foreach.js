@@ -11,4 +11,7 @@ a.forEach(element=>{
   console.log(element);
 });
 let c = [8, 17, 42, 99];
-c.sort(forEach(a, b) => { return a - b; });
+c.sort(function(a, b) { return a - b; });
+c.forEach(element=>{
+  console.log(element);
+});
