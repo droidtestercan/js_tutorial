@@ -10,3 +10,5 @@ Array.from(soliloquy).forEach(function(character) {
 a.forEach(element=>{
   console.log(element);
 });
+let a = [8, 17, 42, 99];
+a.sort(forEach(a, b) => { return a - b; });
