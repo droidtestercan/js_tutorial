@@ -7,7 +7,9 @@ function reverse(string) {
 // Defines a Phrase object.
 function Phrase(content) {
   this.content = content;
-
+  this.louder = function() {
+    return this.content.toUpperCase();
+  }
   // Returns true if the phrase is a palindrome, false otherwise.
   this.palindrome = function palindrome() {
     let processedContent = this.content.toLowerCase();
