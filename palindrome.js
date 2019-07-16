@@ -17,3 +17,8 @@ function Phrase(content) {
     return this.processedContent() === reverse(this.processedContent());
   }
 }
+// Defines a TranslatedPhrase object.
+function TranslatedPhrase(content, translation) {
+  this.content = content;
+  this.translation = translation;
+}
