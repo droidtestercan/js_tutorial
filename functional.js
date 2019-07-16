@@ -26,3 +26,30 @@ function exampleUrls(elements) {
   return elements.map(element => "https://example.com/"+urlify(element));
 }
 console.log(exampleUrls(states));
+// singles: Imperative version
+function imperativeSingles(elements) {
+  let singles = [];
+  elements.forEach(function(element) {
+    if (element.split(/\s+/).length === 1) {
+      singles.push(element);
+    }
+  });
+  return singles;
+}
+console.log(imperativeSingles(states));
+
+// singles: Functional version
+function functionalSingles(elements) {
+  return elements.filter(element => element.split(/\s+/).length === 1);
+}
+console.log(functionalSingles(states));
+
+function returnDakotaOne(elements) {
+  return elements.filter(element => String#includes("Dakota"));
+}
+console.log("RDO: "+ returnDakotaOne(states));
+
+function returnDakotaTwo(elements){
+  return elements.filter(element => element.split(/\s+/).length ===2);
+}
+console.log("RDT: "+ returnDakotaTwo(states));
