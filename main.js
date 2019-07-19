@@ -2,8 +2,8 @@ let Phrase = require("droidtestercan-palindrome");
 
 function palindromeTester(event) {
   event.preventDefault();
-  let string = prompt("Please enter a string for palindrome testing:");
-  let phrase = new Phrase(string);
+
+  let phrase = new Phrase(event.target.phrase.value);
   let palindromeResult = document.querySelector("#palindromeResult");
 
   if (phrase.palindrome()) {
