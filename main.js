@@ -1,6 +1,7 @@
 let Phrase = require("droidtestercan-palindrome");
 
-function palindromeTester() {
+function palindromeTester(event) {
+  event.preventDefault();
   let string = prompt("Please enter a string for palindrome testing:");
   let phrase = new Phrase(string);
   let palindromeResult = document.querySelector("#palindromeResult");
@@ -13,8 +14,8 @@ function palindromeTester() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-  let form = document.querySelector("#palindromeTester");
-  form.addEventListener("submit", function() {
-    palindromeTester();
+  let tester = document.querySelector("#palindromeTester");
+  tester.addEventListener("submit", function(event) {
+    palindromeTester(event);
   });
 });
