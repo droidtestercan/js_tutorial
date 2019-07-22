@@ -6,7 +6,7 @@ let url = 'https://cdn.learnenough.com/phrases.txt'
 
 request(url, function(error, response, body) {
   let lines = body.split("\n");
-  let palindromes = lines.filter(function(line){
+  let palindromes = lines.filter(line => {
     let phrase = new Phrase(line);
     return phrase.palindrome();
   });
