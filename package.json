@@ -1,0 +1,21 @@
+{
+  "name": "js_tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "droidtestercan-palindrome": "^0.2.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-dtcanGmail:droidtestercan/js_tutorial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
